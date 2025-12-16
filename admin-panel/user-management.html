@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - Aubray Admin</title>
+    <!-- Link to admin panel specific CSS -->
+    <link rel="stylesheet" href="../css/admin.css"> 
+    <link rel="stylesheet" href="user-management.css"> 
+</head>
+<body>
+    <header>
+        <!-- Admin Header content (e.g., admin navigation) -->
+    </header>
+
+    <main>
+        <section id="user-management">
+            <h2>User Management</h2>
+            <div class="user-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- User rows will be loaded here by user-management.js -->
+                        <tr>
+                            <td>user123</td>
+                            <td>user@example.com</td>
+                            <td>Active</td>
+                            <td>Agent</td>
+                            <td>
+                                <button class="action-button">View Profile</button>
+                                <button class="action-button">Ban</button>
+                                <button class="action-button">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Admin Footer content -->
+    </footer>
+
+    <script src="user-management.js"></script>
+</body>
+</html>

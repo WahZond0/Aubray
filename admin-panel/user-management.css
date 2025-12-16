@@ -1,0 +1,57 @@
+/* admin-panel/user-management.css */
+
+.user-table-container {
+    margin-top: 20px;
+    overflow-x: auto; /* Add scroll on small screens */
+}
+
+.user-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table-container th,
+.user-table-container td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.user-table-container th {
+    background-color: #f2f2f2;
+}
+
+.action-button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.action-button:last-child {
+    margin-right: 0;
+}
+
+/* Add specific styles for Ban/Delete buttons if needed */
+.action-button.ban {
+    background-color: #dc3545;
+}
+
+.action-button.ban:hover {
+    background-color: #c82333;
+}
+
+.action-button.delete {
+    background-color: #dc3545;
+}
+
+.action-button.delete:hover {
+    background-color: #c82333;
+}

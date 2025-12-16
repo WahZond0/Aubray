@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue - Aubray Dashboard</title>
+    <!-- Link to dashboard specific CSS -->
+    <link rel="stylesheet" href="dashboard.css"> 
+    <link rel="stylesheet" href="revenue.css"> 
+</head>
+<body>
+    <header>
+        <!-- Dashboard Header content -->
+    </header>
+
+    <main>
+        <section id="revenue-overview">
+            <h2>Revenue Overview</h2>
+            <div class="revenue-summary">
+                <!-- Summary metrics (e.g., total revenue, pending payments) -->
+                <p>Total Revenue: $<span id="total-revenue">0.00</span></p>
+                <p>Pending Payments: $<span id="pending-payments">0.00</span></p>
+            </div>
+
+            <div class="revenue-details">
+                <h3>Transaction History</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Revenue transactions will be loaded here -->
+                        <tr>
+                            <td>YYYY-MM-DD</td>
+                            <td>Listing Fee</td>
+                            <td>$XX.XX</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Optional: Export to CSV button -->
+            <button id="export-csv-button">Export to CSV</button>
+
+        </section>
+    </main>
+
+    <footer>
+        <!-- Dashboard Footer content -->
+    </footer>
+
+    <script src="revenue.js"></script>
+</body>
+</html>

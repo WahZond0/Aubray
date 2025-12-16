@@ -1,0 +1,50 @@
+/* user-dashboard/revenue.css */
+
+#revenue-overview {
+    padding: 20px;
+}
+
+.revenue-summary {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.revenue-summary p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.revenue-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.revenue-details th,
+.revenue-details td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.revenue-details th {
+    background-color: #f2f2f2;
+}
+
+#export-csv-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#export-csv-button:hover {
+    background-color: #218838;
+}

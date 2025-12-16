@@ -1,0 +1,65 @@
+.directory-container {
+    display: flex;
+    padding: 20px;
+}
+
+.filter-sidebar {
+    width: 250px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.filter-sidebar h3 {
+    margin-top: 0;
+}
+
+.filter-sidebar div {
+    margin-bottom: 15px;
+}
+
+.filter-sidebar label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.filter-sidebar select,
+.filter-sidebar input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.business-list {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.business-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+}
+
+.business-card h3 {
+    margin-top: 0;
+    font-size: 1.1em;
+}
+
+.business-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Optional: Styles for verified business badges */
+.business-card .verified-badge {
+    color: green;
+    font-weight: bold;
+    margin-left: 5px;
+}

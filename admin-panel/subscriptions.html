@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Monitoring - Aubray Admin</title>
+    <!-- Link to admin panel specific CSS -->
+    <link rel="stylesheet" href="../css/admin.css"> 
+    <link rel="stylesheet" href="subscriptions.css"> 
+</head>
+<body>
+    <header>
+        <!-- Admin Header content -->
+    </header>
+
+    <main>
+        <section id="subscription-monitoring">
+            <h2>Subscription Monitoring</h2>
+            <div class="subscription-filters">
+                <!-- Filters for subscription status, plan, etc. -->
+                <label for="subscription-status">Filter by Status:</label>
+                <select id="subscription-status">
+                    <option value="all">All</option>
+                    <option value="active">Active</option>
+                    <option value="cancelled">Cancelled</option>
+                    <option value="trialing">Trialing</option>
+                    <!-- More status options -->
+                </select>
+
+                <label for="subscription-plan">Filter by Plan:</label>
+                <select id="subscription-plan">
+                    <option value="all">All</option>
+                    <option value="starter">Starter</option>
+                    <option value="pro">Pro</option>
+                    <option value="enterprise">Enterprise</option>
+                    <!-- More plan options -->
+                </select>
+            </div>
+            <div class="subscription-list">
+                <!-- Subscription entries will be loaded here -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User Email</th>
+                            <th>Plan</th>
+                            <th>Status</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Subscription rows will be loaded here by subscriptions.js -->
+                        <tr>
+                            <td>user@example.com</td>
+                            <td>Pro</td>
+                            <td>Active</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>
+                                <button class="action-button">View User</button>
+                                <button class="action-button">Manage Subscription</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Admin Footer content -->
+    </footer>
+
+    <script src="subscriptions.js"></script>
+</body>
+</html>

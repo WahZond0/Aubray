@@ -1,0 +1,88 @@
+/* admin-panel/moderation.css */
+
+.moderation-filters {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.moderation-filters label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.moderation-filters select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.moderation-list {
+    display: grid;
+    gap: 20px;
+}
+
+.moderation-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.2);
+}
+
+.moderation-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.moderation-item p {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.content-preview {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    max-height: 150px; /* Limit preview height */
+    overflow-y: auto; /* Add scroll for long content */
+}
+
+.moderation-actions button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.moderation-actions .approve {
+    background-color: #28a745;
+    color: white;
+}
+
+.moderation-actions .approve:hover {
+    background-color: #218838;
+}
+
+.moderation-actions .reject {
+    background-color: #dc3545;
+    color: white;
+}
+
+.moderation-actions .reject:hover {
+    background-color: #c82333;
+}
+
+.moderation-actions .view-details {
+    background-color: #007bff;
+    color: white;
+}
+
+.moderation-actions .view-details:hover {
+    background-color: #0056b3;
+}

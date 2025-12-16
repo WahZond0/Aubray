@@ -1,0 +1,40 @@
+{
+  "functions": {
+    "source": "backend"
+  },
+  "hosting": [
+    {
+      "target": "main",
+      "public": "main-site",
+      "ignore": [ "firebase.json", "**/.*", "**/node_modules/**" ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "admin",
+      "public": "admin-panel",
+      "ignore": [ "firebase.json", "**/.*", "**/node_modules/**" ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "dashboard",
+      "public": "user-dashboard",
+      "ignore": [ "firebase.json", "**/.*", "**/node_modules/**" ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+        ]
+      }
+    ]
+  }

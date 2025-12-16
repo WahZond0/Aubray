@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Aubray</title>
+    <!-- Link to your main CSS file or a specific contact CSS if you have one -->
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+    <header>
+        <!-- Header content -->
+    </header>
+
+    <main>
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form id="aubray-contact-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script>
+        // Basic JavaScript to handle form submission (you'll likely replace this)
+        const contactForm = document.getElementById('aubray-contact-form');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // TODO: Implement form submission logic.
+            // This could involve:
+            // 1. Sending data to a Firebase Cloud Function.
+            // 2. Using a third-party service (e.g., Formspree).
+            // 3. Storing the message in Firestore (less common for public contact forms due to security).
+
+            console.log('Contact form submitted.');
+            // Example of accessing form data:
+            // const formData = new FormData(contactForm);
+            // const email = formData.get('email');
+            // const message = formData.get('message');
+
+            alert('Thank you for your message! (Submission logic not implemented yet)');
+            contactForm.reset(); // Clear the form after submission
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "aubray-c2a05"
+  },
+  "targets": {
+    "aubray-c2a05": {
+      "hosting": {
+        "main": [
+          "aubray.web.app"
+        ],
+        "admin": [
+          "aubray-admin.web.app"
+        ],
+        "dashboard": [
+          "aubray-dashboard.web.app"
+        ]
+      }
+    }
+  }
+}

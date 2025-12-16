@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Aubray Dashboard</title>
+    <!-- Link to dashboard specific CSS -->
+    <link rel="stylesheet" href="dashboard.css"> 
+    <link rel="stylesheet" href="messages.css"> 
+</head>
+<body>
+    <header>
+        <!-- Dashboard Header content -->
+    </header>
+
+    <main>
+        <section id="messaging-center">
+            <h2>Messaging Center</h2>
+
+            <div id="inbox-view">
+                <h3>Inbox</h3>
+                <div id="inbox-list">
+                    <!-- Message threads will be loaded here by messages.js -->
+                    <div class="thread-item">
+                        <p>Conversation with User Placeholder</p>
+                        <small>Last message snippet...</small>
+                    </div>
+                </div>
+            </div>
+
+            <div id="message-thread-view" style="display: none;">
+                <button id="back-to-inbox">Back to Inbox</button>
+                <h3 id="thread-partner-name">Conversation with...</h3>
+                <div id="message-list">
+                    <!-- Messages will be loaded here by messages.js -->
+                    <div class="message-item">
+                        <p>Message text placeholder</p>
+                        <small>Timestamp placeholder</small>
+                    </div>
+                </div>
+                <div class="message-input-area">
+                    <textarea id="message-input" placeholder="Type your message..."></textarea>
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Dashboard Footer content -->
+    </footer>
+
+    <script src="messages.js"></script>
+</body>
+</html>

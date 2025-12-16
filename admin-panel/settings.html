@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Settings - Aubray Admin</title>
+    <!-- Link to admin panel specific CSS -->
+    <link rel="stylesheet" href="../css/admin.css"> 
+    <link rel="stylesheet" href="settings.css"> 
+</head>
+<body>
+    <header>
+        <!-- Admin Header content -->
+    </header>
+
+    <main>
+        <section id="platform-settings">
+            <h2>Platform Settings</h2>
+            <form id="settings-form">
+                <div class="setting-group">
+                    <h3>General Settings</h3>
+                    <label for="site-title">Site Title:</label>
+                    <input type="text" id="site-title" name="siteTitle">
+
+                    <label for="site-description">Site Description:</label>
+                    <textarea id="site-description" name="siteDescription" rows="4"></textarea>
+
+                    <!-- More general settings -->
+                </div>
+
+                <div class="setting-group">
+                    <h3>Feature Toggles</h3>
+                    <div>
+                        <input type="checkbox" id="enable-chat" name="enableChat">
+                        <label for="enable-chat">Enable Messaging Feature</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="enable-bookings" name="enableBookings">
+                        <label for="enable-bookings">Enable Booking Requests</label>
+                    </div>
+                    <!-- More feature toggles -->
+                </div>
+
+                <!-- More setting groups -->
+
+                <button type="submit">Save Settings</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Admin Footer content -->
+    </footer>
+
+    <script src="settings.js"></script>
+</body>
+</html>

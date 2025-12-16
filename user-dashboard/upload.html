@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Content - Aubray Dashboard</title>
+    <!-- Link to dashboard specific CSS -->
+    <link rel="stylesheet" href="dashboard.css"> 
+    <link rel="stylesheet" href="upload.css"> 
+</head>
+<body>
+    <header>
+        <!-- Dashboard Header content -->
+    </header>
+
+    <main>
+        <section id="upload-content">
+            <h2>Upload Content</h2>
+            <div class="upload-form">
+                <label for="content-type">Select Content Type:</label>
+                <select id="content-type">
+                    <option value="property">Property Listing</option>
+                    <option value="video">Video</option>
+                    <option value="announcement">Announcement</option>
+                    <!-- More content types -->
+                </select>
+
+                <div class="file-upload-area">
+                    <input type="file" id="file-input">
+                    <label for="file-input">Choose File</label>
+                    <span id="file-name">No file chosen</span>
+                </div>
+
+                <!-- Additional fields based on content type (will be dynamic) -->
+                <div id="additional-fields">
+                    <!-- E.g., for property: title, description, location -->
+                </div>
+
+                <button id="upload-button">Upload</button>
+            </div>
+
+            <div class="upload-progress">
+                <!-- Progress bar and status messages will be shown here -->
+                <p id="upload-status"></p>
+                <progress id="progress-bar" value="0" max="100"></progress>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Dashboard Footer content -->
+    </footer>
+
+    <script src="upload.js"></script>
+</body>
+</html>

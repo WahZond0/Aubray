@@ -1,0 +1,34 @@
+name: Deploy to Firebase Hosting
+
+on:
+  push:
+    branches:
+      - main # Change this to your main branch if it's not 'main'
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18' # Change this to your project's Node.js version
+
+    # If your project requires dependencies and a build step, uncomment and modify these steps:
+    # - name: Install dependencies
+    #   run: npm install
+
+    # - name: Build project
+    #   run: npm run build # Replace with your project's build command (e.g., ng build, vue-cli-service build)
+
+    - name: Deploy to Firebase Hosting
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: ${{ secrets.GITHUB_TOKEN }}
+        firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_AUBRAY }} # This secret needs to be configured in your GitHub repo settings
+        projectId: aubray-c2a05 # Your Firebase project ID
+        target: main,admin,dashboard # Your Firebase Hosting targets

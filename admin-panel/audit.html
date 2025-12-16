@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Logs - Aubray Admin</title>
+    <!-- Link to admin panel specific CSS -->
+    <link rel="stylesheet" href="../css/admin.css"> 
+    <link rel="stylesheet" href="audit.css"> 
+</head>
+<body>
+    <header>
+        <!-- Admin Header content -->
+    </header>
+
+    <main>
+        <section id="audit-logs">
+            <h2>Audit Logs</h2>
+            <div class="audit-filters">
+                <!-- Filters for date range, user, action type, etc. -->
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date">
+
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date">
+
+                <label for="user-filter">User:</label>
+                <input type="text" id="user-filter" placeholder="Filter by user email or ID">
+
+                <!-- More filter options -->
+            </div>
+            <div class="audit-list">
+                <!-- Audit log entries will be loaded here -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>User</th>
+                            <th>Action</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Audit log rows will be loaded here by audit.js -->
+                        <tr>
+                            <td>YYYY-MM-DD HH:MM:SS</td>
+                            <td>user@example.com</td>
+                            <td>Approved Listing</td>
+                            <td>Listing ID: listing123</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Admin Footer content -->
+    </footer>
+
+    <script src="audit.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Moderation - Aubray Admin</title>
+    <link rel="stylesheet" href="../css/admin.css"> 
+    <link rel="stylesheet" href="moderation.css"> 
+</head>
+<body>
+    <header>
+        <!-- Admin Header content -->
+    </header>
+
+    <main>
+        <section id="content-moderation">
+            <h2>Content Moderation</h2>
+            <div class="moderation-filters">
+                <!-- Filters for content type, status, etc. -->
+                <label for="content-type">Filter by Type:</label>
+                <select id="content-type">
+                    <option value="all">All</option>
+                    <option value="property">Property Listings</option>
+                    <option value="business">Business Listings</option>
+                    <option value="post">Community Posts</option>
+                    <!-- More content types -->
+                </select>
+                <label for="status">Filter by Status:</label>
+                <select id="status">
+                    <option value="pending">Pending Review</option>
+                    <option value="approved">Approved</option>
+                    <option value="rejected">Rejected</option>
+                </select>
+            </div>
+            <div class="moderation-list">
+                <!-- Content items for moderation will be loaded here by moderation.js -->
+                <div class="moderation-item">
+                    <h3>Content Title Placeholder</h3>
+                    <p>Type: Placeholder | Status: Placeholder</p>
+                    <div class="content-preview">
+                        <!-- Preview of the content (e.g., image, text snippet) -->
+                        <p>Content preview goes here...</p>
+                    </div>
+                    <div class="moderation-actions">
+                        <button class="action-button approve">Approve</button>
+                        <button class="action-button reject">Reject</button>
+                        <button class="action-button view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Admin Footer content -->
+    </footer>
+
+    <script src="moderation.js"></script>
+</body>
+</html>

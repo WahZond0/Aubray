@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Statistics - Aubray Admin</title>
+    <!-- Link to admin panel specific CSS -->
+    <link rel="stylesheet" href="../css/admin.css"> 
+    <link rel="stylesheet" href="stats.css"> 
+    <!-- Consider linking a charting library CSS if you plan to use one -->
+    <!-- <link rel="stylesheet" href="path/to/charting-library.css"> -->
+</head>
+<body>
+    <header>
+        <!-- Admin Header content -->
+    </header>
+
+    <main>
+        <section id="site-statistics">
+            <h2>Site Statistics</h2>
+            <div class="stats-summary">
+                <!-- Summary statistics (e.g., total users, active listings) -->
+                <div class="stat-card">
+                    <h3>Total Users</h3>
+                    <p id="total-users">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Listings</h3>
+                    <p id="active-listings">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Page Views (Last 30 Days)</h3>
+                    <p id="page-views">0</p>
+                </div>
+                <!-- More summary stats -->
+            </div>
+
+            <div class="stats-charts">
+                <!-- Charts for trends (e.g., user signups over time, listing views) -->
+                <h3>User Signups Trend</h3>
+                <div id="user-signups-chart"></div>
+
+                <h3>Listing Views Trend</h3>
+                <div id="listing-views-chart"></div>
+                <!-- More charts -->
+            </div>
+
+            <!-- Optional: Data tables for detailed statistics -->
+            <div class="stats-tables">
+                <h3>Top Performing Listings</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Listing Title</th>
+                            <th>Views</th>
+                            <th>Inquiries</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Top listings will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <!-- Admin Footer content -->
+    </footer>
+
+    <script src="stats.js"></script>
+    <!-- Consider linking a charting library JS if you plan to use one (e.g., Chart.js, ApexCharts) -->
+    <!-- <script src="path/to/charting-library.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aubray Org - User Dashboard</title>
+    <link rel="stylesheet" href="styles/analytics.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Aubray Org</div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="analytics-overview">
+            <h2>Analytics Overview</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>Total Engagements</h3>
+                    <p>1,234</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Profile Views</h3>
+                    <p>567</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Likes</h3>
+                    <p>890</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Shares</h3>
+                    <p>123</p>
+                </div>
+            </div>
+        </section>
+        <section class="engagement-graph">
+            <h2>Engagement Over Time</h2>
+            <canvas id="engagementChart"></canvas>
+        </section>
+        <section class="top-content">
+            <h2>Top Performing Content</h2>
+            <ul>
+                <li>Content Title 1 - Engagements: 150</li>
+                <li>Content Title 2 - Engagements: 120</li>
+                <li>Content Title 3 - Engagements: 100</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Aubray Org. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/analytics.js"></script>
+</body>
+</html>

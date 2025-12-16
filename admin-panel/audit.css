@@ -1,0 +1,47 @@
+/* admin-panel/audit.css */
+
+#audit-logs {
+    padding: 20px;
+}
+
+.audit-filters {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.audit-filters label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.audit-filters input[type="date"],
+.audit-filters input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.audit-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.audit-list th,
+.audit-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.audit-list th {
+    background-color: #f2f2f2;
+}
+
+.audit-list tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

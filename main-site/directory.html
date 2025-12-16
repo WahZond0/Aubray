@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory - Aubray</title>
+    <link rel="stylesheet" href="directory.css">
+</head>
+<body>
+    <header>
+        <!-- Header content -->
+    </header>
+
+    <main>
+        <section id="business-directory">
+            <h2>Business Directory</h2>
+            <div class="directory-container">
+                <aside class="filter-sidebar">
+                    <h3>Filters</h3>
+                    <!-- Filter options will go here -->
+                    <div>
+                        <label for="category">Category:</label>
+                        <select id="category">
+                            <option value="all">All</option>
+                            <!-- Categories will be populated here -->
+                        </select>
+                    </div>
+                    <div>
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" placeholder="Enter location">
+                    </div>
+                    <!-- More filter options -->
+                </aside>
+                <section class="business-list">
+                    <!-- Business cards will be loaded here by directory.js -->
+                    <div class="business-card">
+                        <h3>Business Name Placeholder</h3>
+                        <p>Category Placeholder</p>
+                        <p>Location Placeholder</p>
+                        <!-- More business info -->
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="directory.js"></script>
+</body>
+</html>
